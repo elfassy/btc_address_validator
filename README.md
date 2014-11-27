@@ -4,11 +4,19 @@
 Simple bitcoin address validation based on checksum. Useful to provide feedback to users.
 
 ### Usage
+Add to your Gemfile
+
+```ruby
+gem "btc_address_validator"
+```
+
+Then in your models
+
 ```ruby  
 validates :address, btc_address: true
 ```
 
-**Tips (Thanks!)**
+**Tips (Thanks!):**
 1C1NCedACSukWyKEjgSUYpVuiXQEtYwez4
 
 ### Test
