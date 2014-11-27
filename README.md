@@ -1,7 +1,7 @@
 [![Build Status](https://travis-ci.org/elfassy/btc_address_validator.svg)](https://travis-ci.org/elfassy/btc_address_validator)
 
 ## BtcAddressValidator
-Simple BTC address validation based on checksum. Useful to provide feedback to users.
+Simple bitcoin address validation based on checksum. Useful to provide feedback to users.
 
 ### Usage
 ```ruby  

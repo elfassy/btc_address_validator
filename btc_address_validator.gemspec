@@ -8,7 +8,7 @@ Gem::Specification.new do |s|
   s.email       = ["michaelelfassy@gmail.com"]
   s.homepage    = "https://github.com/elfassy/btc_address_validator"
   s.summary     = "Simple BTC address validator"
-  s.description = "Check if a BTC address looks valid."
+  s.description = "Simple bitcoin address validation based on checksum"
   s.license     = "MIT"
 
   s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.rdoc"]
