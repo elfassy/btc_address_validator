@@ -13,7 +13,7 @@ gem "btc_address_validator"
 Then in your models
 
 ```ruby  
-validates :address, btc_address: true
+validates :btc_address, btc_address_format: true
 ```
 
 **Tips (Thanks!):**

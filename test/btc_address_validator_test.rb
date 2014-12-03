@@ -3,7 +3,7 @@ require "test_helper"
 class Validatable
   include ActiveModel::Validations
   attr_accessor :btc_address
-  validates :btc_address, btc_address: {message: "your copy pasting skills are not so good"}
+  validates :btc_address, btc_address_format: {message: "is invalid"}
 end
 
 class BtcAddressValidatorTest < ActiveSupport::TestCase
@@ -24,6 +24,7 @@ class BtcAddressValidatorTest < ActiveSupport::TestCase
   test "with invalid address" do
     @model.btc_address = "1234567890"
     refute @model.valid?
+    assert_equal @model.errors.full_messages, ["Btc address is invalid"]
   end
 
 
